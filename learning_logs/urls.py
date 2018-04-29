@@ -1,9 +1,9 @@
 '''定义learning_logsd的URL模式'''
 
 from django.conf.urls import url
-from . import view
+from . import views
 
 urlpatterns = [
 	#主页
-    path(r'^$',view.index,name='index'),
+    url(r'^$',views.index,name='index'),
 ]
