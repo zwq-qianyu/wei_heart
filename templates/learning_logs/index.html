@@ -1,13 +1,21 @@
 {% extends "learning_logs/base.html" %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>index</title>
-</head>
-<body>
-	{% block content %}
-	<p>Learning Log helps you keep track of your learning, for any topic you're learning about.</p>
-	{% endblock content %}
-</body>
-</html>
+
+{% block header %}
+<div class="jumbotron">
+	<center><h1>记下你的每一次心语</h1></center>
+</div>
+{% endblock header %}
+
+{% block content %}
+<center>
+<h2>
+	<a href="{% url 'register' %}">注册一个账户</a>来记录你的心语，记下你的每一次心动、每一次灵魂的孤独。
+</h2>
+<h2>每当你心情不好，却又不知道该向谁吐露时，记录下来。</h2>
+<h2>除了你自己，没有人能看到！</h2>
+<h2>或许这会是你孤独旅程中最有意义的回忆。</h2>
+<h2>直到某一天，你与另一个孤独的灵魂相遇</h2>
+<h2>你们共同分享，彼此曾经那些孤独岁月中的情感！</h2>
+</center>
+{% endblock content %}
+
